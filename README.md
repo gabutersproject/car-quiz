@@ -1,4 +1,4 @@
-# Throttle Quiz
+# GabutersTech Quiz
 
 A short motorcycle and automotive quiz. It is a static site: HTML, CSS, and JavaScript, with no build step.
 
