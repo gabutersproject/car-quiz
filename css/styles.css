@@ -133,7 +133,7 @@ footer {
 .brand-name {
   margin: 0;
   font-family: var(--display);
-font-size: 1.45rem;
+  font-size: 1.45rem;
   letter-spacing: 0.02em;
   line-height: 1;
 }
