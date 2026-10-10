@@ -309,6 +309,7 @@ h3 {
 
 .choice:hover:not(:disabled) {
   border-color: rgba(240, 162, 2, 0.7);
+  background: rgba(240, 162, 2, 0.08);
 }
 
 .choice:disabled {
@@ -432,6 +433,16 @@ footer p {
     padding-top: 22px;
   }
 
+  .mast {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 1;
+    min-width: 200px;
+  }
+
   .panel {
     padding: 24px 16px 18px;
     border-radius: 18px;
@@ -443,6 +454,49 @@ footer p {
 
   .brand-name {
     font-size: 1.2rem;
+  }
+
+  .choice {
+    padding: 16px 14px;
+    gap: 16px;
+  }
+
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .panel {
+    padding: 20px 14px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: clamp(2.8rem, 10vw, 5rem);
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrap {
+    width: min(840px, calc(100% - 48px));
+    padding: 48px 0 80px;
+  }
+
+  .choices {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  .btn:focus-visible,
+  .choice:focus-visible {
+    outline-width: 3px;
   }
 }
 
