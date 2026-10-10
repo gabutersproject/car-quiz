@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Throttle Quiz — Motorcycle &amp; Automotive</title>
+    <title>GabutersTech Quiz — Motorcycle</title>
     <meta
+      id="meta-description"
       name="description"
-      content="A short practice quiz on motorcycles, engines, and everyday automotive know-how."
+      content="GabutersTech Quiz: 25 motorcycle questions in English or Indonesian."
     />
     <meta name="theme-color" content="#100e0c" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -30,27 +31,31 @@
             <path d="M16 33c1.8-5 4.6-7.5 8-7.5s6.2 2.5 8 7.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
           <div>
-            <p class="brand-kicker">Motorcycle &amp; automotive</p>
-            <p class="brand-name">Apex Garage</p>
+            <p id="brand-kicker" class="brand-kicker">Motorcycle</p>
+            <p class="brand-name">GabutersTech Quiz</p>
           </div>
+        </div>
+        <div id="lang-switch" class="lang-switch" role="group" aria-label="Language">
+          <button id="lang-en" type="button" aria-pressed="true">EN</button>
+          <button id="lang-id" type="button" aria-pressed="false">ID</button>
         </div>
       </header>
 
       <main>
         <section id="screen-start" class="panel">
-          <p class="eyebrow">Practice lap</p>
-          <h1>Throttle <span>Quiz</span></h1>
-          <p class="lede">
-            Ten questions on bikes, engines, and the parts that keep a car or motorcycle honest.
+          <p id="eyebrow-start" class="eyebrow">Practice lap</p>
+          <h1><span id="hero-lead">Throttle</span> <span id="hero-accent">Quiz</span></h1>
+          <p id="lede" class="lede">
+            Twenty-five questions on motorcycles: controls, engines, and how a bike stays honest on the road.
             Each answer comes with a short explanation.
           </p>
           <ul class="facts">
-            <li><strong>10</strong> questions</li>
-            <li><strong>Mixed</strong> bike &amp; car</li>
-            <li><strong>Fresh</strong> order each run</li>
+            <li id="fact-count"><strong>25</strong> questions</li>
+            <li id="fact-topic"><strong>Bikes</strong> only</li>
+            <li id="fact-order"><strong>Fresh</strong> order each run</li>
           </ul>
           <button id="start-btn" class="btn" type="button">Start the quiz</button>
-          <p class="key-hint">Keys 1–4 answer. Enter moves on.</p>
+          <p id="key-hint" class="key-hint">Keys 1–4 answer. Enter moves on.</p>
         </section>
 
         <section id="screen-quiz" class="panel" hidden>
@@ -70,12 +75,12 @@
         </section>
 
         <section id="screen-result" class="panel" hidden>
-          <p class="eyebrow">Garage report</p>
+          <p id="eyebrow-result" class="eyebrow">Garage report</p>
           <p id="rank" class="rank"></p>
           <p id="score-line" class="score-line"></p>
           <p id="rank-line" class="lede"></p>
           <div id="review-wrap" hidden>
-            <h3>Worth another look</h3>
+            <h3 id="review-title">Worth another look</h3>
             <ul id="review"></ul>
           </div>
           <button id="again-btn" class="btn" type="button">Ride it again</button>
@@ -85,12 +90,12 @@
       </main>
 
       <footer>
-        <p>A practice quiz for riders and drivers. It is not a riding course, a repair manual, or a substitute for the owner’s manual.</p>
+        <p id="footer-note">A practice quiz for motorcycle riders. It is not a riding course, a repair manual, or a substitute for the owner’s manual.</p>
       </footer>
     </div>
 
     <noscript>
-      <p class="noscript">This quiz needs JavaScript enabled in your browser.</p>
+      <p class="noscript">This quiz needs JavaScript enabled in your browser. Kuis ini membutuhkan JavaScript di peramban.</p>
     </noscript>
     <script src="js/quiz.js"></script>
   </body>
